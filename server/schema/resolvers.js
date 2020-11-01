@@ -160,7 +160,6 @@ module.exports = {
                     // );
                     // user.statistics.push(statistic);
                     // return await user.save()
-                    console.log(context.user);
                     const stat = await Statistics.create({
                         ...statistic,
                         user_id: context.user._id
@@ -175,7 +174,6 @@ module.exports = {
                             ]
                         });
                         if(user) {
-                            console.log(user);
                             return user
                         }
                     }
@@ -216,7 +214,6 @@ module.exports = {
                         ]
                     });
                     if(user) {
-                        console.log(user.map(us => us.toJSON()));
                         return user
                     }
                 } else {
@@ -248,7 +245,6 @@ module.exports = {
                         ]
                     });
                     if(user) {
-                        console.log(user);
                         return user
                     }
                 } else {

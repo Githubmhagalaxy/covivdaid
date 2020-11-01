@@ -32,28 +32,7 @@ Users.init({
         type: DataTypes.STRING,
         allowNull: false,
         min: 6
-    },
-    // statistics_id: {
-    //     type: DataTypes.INTEGER,
-    //     references: {
-    //         model: Statistics,
-    //         key: 'id'
-    //     }
-    // },
-    // food_camp_id: {
-    //     type: DataTypes.INTEGER,
-    //     references: {
-    //         model: FoodCamps,
-    //         key: 'id'
-    //     }
-    // },
-    // hospital_id: {
-    //     type: DataTypes.INTEGER,
-    //     references: {
-    //         model: Hospitals,
-    //         key: 'id'
-    //     }
-    // }
+    }
 }, {
     sequelize,
     timestamps: true,
