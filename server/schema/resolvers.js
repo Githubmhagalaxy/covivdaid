@@ -244,7 +244,7 @@ module.exports = {
                             _id: context.user._id
                         },
                         include: [
-                            {model: Hospitals, as: 'hospital', raw: true, nest: true}
+                            {model: Hospitals, as: 'hospitals', raw: true, nest: true}
                         ]
                     });
                     if(user) {

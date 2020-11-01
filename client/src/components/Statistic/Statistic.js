@@ -12,6 +12,8 @@ import {indexDBPromise} from "../../utils/helpers";
 
 import loadingIcon from "../../Assets/icons/loading.svg"
 
+import statisticBanner from "../../Assets/img/statistic.png"
+
 const getStatistics = async () => {
     return axios.get('https://api.covid19api.com/summary');
 }
@@ -62,6 +64,9 @@ const Statistic = () => {
     return (
         <>
             <section className="statistics">
+                <div className="banner">
+                    <img src={statisticBanner} alt="statistic banner"/>
+                </div>
                 <article className="global-statistics">
                     <div className="container">
                         <h2 className="title-2">Global Statistics</h2>
