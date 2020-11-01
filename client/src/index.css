@@ -175,8 +175,8 @@ ul.cart-wrapper.large > li {
 }
 
 section.statistics {
-  padding: 20px 0;
-  margin: 50px auto;
+  padding: 0 0 20px;
+  margin: 0 auto 50px;
 }
 section.statistics article.country-statistics .form-container {
   background-color: #ecf0f1;
@@ -352,6 +352,25 @@ section.saved-food-camps, section.saved-hospitals {
   right: 50%;
   transform: translate(50%, -50%);
   z-index: 10;
+}
+
+.banner {
+  width: 100%;
+  height: 50vh;
+}
+@media screen and (max-width: 1000px) {
+  .banner {
+    height: auto;
+  }
+}
+.banner img {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 1000px) {
+  .banner img {
+    height: auto;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

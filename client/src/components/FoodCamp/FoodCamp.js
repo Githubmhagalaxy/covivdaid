@@ -7,6 +7,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 import {KEYS} from "../../utils/config";
 import loadingIcon from "../../Assets/icons/loading.svg";
+import foodCampBanner from "../../Assets/img/foodcamp.jpg";
 
 const getFoodCamps = async () => {
     return axios.get('https://data.seattle.gov/resource/kkzf-ntnu.json');
@@ -98,6 +99,9 @@ const FoodCamp = () => {
     return (
         <>
             <section className="food-camp-sec">
+                <div className="banner">
+                    <img src={foodCampBanner} alt="statistic banner"/>
+                </div>
                 <article className="location-form">
                     <div className="container">
                         <h2 className="title-2">Food Camps</h2>

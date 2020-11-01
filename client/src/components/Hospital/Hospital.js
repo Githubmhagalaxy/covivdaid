@@ -5,6 +5,7 @@ import {KEYS} from "../../utils/config";
 import HospitalDetails from "./HospitalDetails";
 import FoodCampDetails from "../FoodCamp/FoodCampDetails";
 import {v4 as uuidv4} from "uuid";
+import hospitalBanner from "../../Assets/img/hospital.jpg";
 
 
 const Hospital = () => {
@@ -41,6 +42,9 @@ const Hospital = () => {
     return (
         <>
             <section className="hospitals">
+                <div className="banner">
+                    <img src={hospitalBanner} alt="statistic banner"/>
+                </div>
                 <article className="hospital-form">
                     <div className="container">
                         <h2 className="title-2">Hospitals</h2>
