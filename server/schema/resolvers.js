@@ -54,8 +54,11 @@ module.exports = {
                             _id: context.user._id
                         },
                         include: [
-                            {model: FoodCamps, as: 'food_camps', include: [
-                                    {model: FoodCamps.websites, as: 'website', raw: true, nest: true}
+                            {
+                                model: FoodCamps,
+                                as: 'food_camps',
+                                include: [
+                                    {model: FoodCampWebsites, as: 'website', raw: true, nest: true}
                                 ],
                                 raw: true,
                                 nest: true

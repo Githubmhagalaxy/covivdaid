@@ -32,7 +32,7 @@ Users.hasMany(Hospitals, {
 Hospitals.belongsTo(Users);
 
 FoodCamps.hasMany(FoodCampWebsites, {
-    as: 'websites',
+    as: 'website',
     foreignKey: {
         name: 'food_camp_id',
         allowNull: false
