@@ -11,6 +11,7 @@ const Home = () => {
                 <div className="container">
                     <h1 className="title">Covid Helper</h1>
                     <p>This application is an assistant for tracking COVID19 and get Food Camps or near hospitals, Hope this would help you...</p>
+                    <p>please allow this application to use your location for better experience</p>
                     <div className="btn-sec">
                         <Link to="/Statistics">View Latest Statistics</Link>
                         <Link to="/FoodCamps">View Nearby FoodCamps</Link>

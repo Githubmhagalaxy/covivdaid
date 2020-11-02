@@ -116,6 +116,7 @@ const FoodCamp = () => {
                                     <label htmlFor="custom">use custom location</label>
                                 </div>
                             </div>
+                            <p>You should allow this website to use you location if you want to use your current location to find FoodCamps</p>
                             <input type="text" name="latitude" id="latitude" value={formState.latitude} onChange={handleChange} placeholder={'Latitude:'}/>
                             <input type="text" name="longitude" id="longitude" value={formState.longitude} onChange={handleChange} placeholder={'Longitude:'}/>
                             <div className="submit-sec">
