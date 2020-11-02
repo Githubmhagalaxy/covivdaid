@@ -86,10 +86,10 @@ header {
 
 section.home {
     .container {
-        padding: 100px 0;
-        margin: 50px auto;
-        background-color: $background;
-        border-radius: 5px;
+        //padding: 100px 0;
+        //margin: 50px auto;
+        //background-color: $background;
+        //border-radius: 5px;
         > * {
             margin-bottom: 15px;
         }
@@ -98,6 +98,13 @@ section.home {
         }
         .btn-sec {
             text-align: center;
+            @include flex(row, space-between, center);
+            @include max-1000 {
+                @include flex(column, center, center);
+                a {
+                    margin: 10px auto;
+                }
+            }
         }
     }
 }

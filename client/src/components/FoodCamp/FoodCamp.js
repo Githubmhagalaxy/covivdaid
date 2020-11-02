@@ -75,7 +75,7 @@ const FoodCamp = () => {
         const tmpFoodCamps = data.data.filter(foodCamp => {
             const lat = foodCamp.latitude,
                   long = foodCamp.longitude;
-            return (countDistance(finalLocation, {lat, long}) > KEYS.foodCampRadius)
+            return (countDistance(finalLocation, {lat, long}) <= KEYS.foodCampRadius)
         });
         setFoodCamps(tmpFoodCamps);
         setFormState({

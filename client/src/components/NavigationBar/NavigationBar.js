@@ -8,7 +8,7 @@ const NavigationBar = () => {
         <>
             <header>
                 <nav className="navbar navbar-expand-lg navbar-dark">
-                    <Link to={'/'} className={'navbar-brand'}>Navbar</Link>
+                    <Link to={'/'} className={'navbar-brand'}>Covidaid</Link>
                     <button className="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                             aria-label="Toggle navigation">

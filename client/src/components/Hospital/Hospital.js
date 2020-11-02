@@ -15,6 +15,7 @@ const Hospital = () => {
     });
     const [hospitals, setHospitals] = useState([]);
     const [showResult, setShowResult] = useState(false);
+    const [error, setError] = useState('');
     const handleChange = e => {
         const {value, name} = e.target;
         setFormState(prevState => ({
@@ -36,6 +37,8 @@ const Hospital = () => {
             }
         } catch (e) {
             console.log(e);
+            // setError('Could not find any hospitals');
+            setShowResult(true);
         }
     }
     

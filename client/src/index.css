@@ -112,12 +112,6 @@ header nav .icon svg, header nav .icon i {
   width: 15px;
 }
 
-section.home .container {
-  padding: 100px 0;
-  margin: 50px auto;
-  background-color: #ecf0f1;
-  border-radius: 5px;
-}
 section.home .container > * {
   margin-bottom: 15px;
 }
@@ -126,6 +120,21 @@ section.home .container p {
 }
 section.home .container .btn-sec {
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 1000px) {
+  section.home .container .btn-sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  section.home .container .btn-sec a {
+    margin: 10px auto;
+  }
 }
 
 ul.cart-wrapper {
