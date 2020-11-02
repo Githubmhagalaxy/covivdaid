@@ -33,6 +33,7 @@ const Statistic = () => {
         const country = data.data.Countries.find(country => country.Slug === selectValue);
         setCountryStats({ ...country });
         setSelectValue('');
+        setTimeout(() => window.location.hash = "#results", 100)
     }
     const saveStatistic = async (data, elem) => {
         const statistic = {...data};
@@ -110,9 +111,7 @@ const Statistic = () => {
                                     {data.data.Countries.map(country => (<option key={country.CountryCode} value={country.Slug}>{country.Country}</option>))}
                                 </select>
                                 <div className="submit-sec">
-                                    <a href="#results">
-                                        <button type="submit">Submit</button>
-                                    </a>
+                                    <button type="submit">Submit</button>
                                 </div>
                             </form>
                         </div>

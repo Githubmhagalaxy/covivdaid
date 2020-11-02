@@ -84,6 +84,7 @@ const FoodCamp = () => {
             longitude: ""
         })
         setShowResult(true);
+        setTimeout(() => window.location.hash = "#results", 1000)
     }
     
     if (isLoading) {

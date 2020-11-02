@@ -32,6 +32,7 @@ const Hospital = () => {
                 const {data} = await axios.get(`https://service.zipapi.us/hospital/radius/${zipCode}?X-API-KEY=${KEYS.zipApiKey}&radius=${KEYS.hospitalsRadius}`);
                 setHospitals(data.data);
                 setShowResult(true);
+                setTimeout(() => window.location.hash = "#results", 1000)
             } else {
                 throw new Error('Could not find Any zip codes');
             }
