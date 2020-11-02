@@ -12,7 +12,7 @@ const About = () => {
                         <li>NodeJs</li>
                         <li>ExpressJs</li>
                         <li>ReactJs</li>
-                        <li>MongoDB</li>
+                        <li>MySQL</li>
                         <li>GraphQL</li>
                         <li>Covid19API</li>
                         <li>Zip Us API</li>

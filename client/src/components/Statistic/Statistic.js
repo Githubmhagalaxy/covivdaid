@@ -110,7 +110,9 @@ const Statistic = () => {
                                     {data.data.Countries.map(country => (<option key={country.CountryCode} value={country.Slug}>{country.Country}</option>))}
                                 </select>
                                 <div className="submit-sec">
-                                    <button type="submit">Submit</button>
+                                    <a href="#results">
+                                        <button type="submit">Submit</button>
+                                    </a>
                                 </div>
                             </form>
                         </div>
