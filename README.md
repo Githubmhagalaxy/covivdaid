@@ -4,6 +4,7 @@ This application will provide three features to help the people who are stugglin
 
 In the application user also has the ability to save the current statistic or chosen food camp or hospital to access this data later.
 
+For finding nearby FoodCamps by user location this application will require access to user's device location
 
 ## Mock-Up
 
