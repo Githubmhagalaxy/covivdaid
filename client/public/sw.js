@@ -1,4 +1,4 @@
-var CACHE_NAME = 'covid-helper-v1';
+var CACHE_NAME = 'covid-helper-v2';
 var urlsToCache = [
     '/',
     '/login',
