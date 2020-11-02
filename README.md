@@ -8,7 +8,7 @@ This application is an assistant for tracking COVID19 and get Food Camps or near
 * NodeJs
 * ExpressJs
 * ReactJs
-* MongoDB
+* MySQL
 * GraphQL
 * Covid19API
 * Zip Us API
